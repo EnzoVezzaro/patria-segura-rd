@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { 
-  Shield, Alert, MapPin, Phone, MessageCircle, 
+  Shield, AlertTriangle, MapPin, Phone, MessageCircle, 
   Users, Star, Download, ExternalLink, ShieldCheck 
 } from "lucide-react";
 
@@ -11,7 +11,7 @@ const apps = [
     id: 1,
     name: "Alerta RD",
     description: "Sistema de alertas temprana para emergencias y desastres naturales en todo el territorio dominicano.",
-    icon: <Alert className="h-8 w-8" />,
+    icon: <AlertTriangle className="h-8 w-8" />,
     rating: 4.7,
     users: "15K+",
     color: "bg-gradient-to-br from-dominican-dark-green to-dominican-dark-green/70",
