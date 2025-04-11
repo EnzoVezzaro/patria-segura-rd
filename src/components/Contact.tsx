@@ -31,26 +31,30 @@ const Contact = () => {
                   <p className="text-gray-600 pl-7">
                     Únete a nuestro grupo de desarrolladores dominicanos comprometidos con la seguridad nacional.
                   </p>
-                  <a href="#" className="inline-block mt-2 pl-7 text-dominican-dark-green font-medium hover:underline">Unirse al grupo →</a>
+                  <a href="https://github.com/orgs/Patria-Segura-RD/discussions/1" target="_blank" className="inline-block mt-2 pl-7 text-dominican-dark-green font-medium hover:underline">Unirse al grupo →</a>
                 </div>
                 <div>
-                  <div className="flex items-center mb-2">
-                    <Github className="h-5 w-5 mr-2 text-dominican-dark-green" />
-                    <h4 className="font-medium text-dominican-dark-green">Contribuir con Código</h4>
-                  </div>
+                  <a href="https://github.com/Patria-Segura-RD" target="_blank" rel="noopener noreferrer">
+                    <div className="flex items-center mb-2">
+                      <Github className="h-5 w-5 mr-2 text-dominican-dark-green" />
+                      <h4 className="font-medium text-dominican-dark-green">Contribuir con Código</h4>
+                    </div>
+                  </a>
                   <p className="text-gray-600 pl-7">
-                    Todas nuestras aplicaciones son de código abierto. Puedes ayudar a mejorarlas.
+                    Nuestras aplicaciones son en su mayoria de código abierto. Puedes ayudar a mejorarlas.
                   </p>
-                  <a href="#" className="inline-block mt-2 pl-7 text-dominican-dark-green font-medium hover:underline">Ver repositorios →</a>
+                  <a href="https://github.com/orgs/Patria-Segura-RD/repositories" target="_blank" className="inline-block mt-2 pl-7 text-dominican-dark-green font-medium hover:underline">Ver repositorios →</a>
                 </div>
                 <div className="bg-dominican-dark-green text-white p-6 rounded-xl mt-8">
                   <h4 className="font-bold mb-2">¿Tienes una idea para una nueva app?</h4>
                   <p className="text-white/80 mb-3">
                     Comparte tu idea para una aplicación que pueda mejorar la seguridad dominicana.
                   </p>
-                  <button className="bg-white text-dominican-dark-green px-4 py-2 rounded-lg text-sm font-medium hover:bg-dominican-light-green transition-colors">
-                    Proponer idea
-                  </button>
+                  <a href="https://github.com/orgs/Patria-Segura-RD/discussions/2" target="_blank" rel="noopener noreferrer">
+                    <button className="bg-white text-dominican-dark-green px-4 py-2 rounded-lg text-sm font-medium hover:bg-dominican-light-green transition-colors">
+                      Proponer idea
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>

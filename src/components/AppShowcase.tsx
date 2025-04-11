@@ -118,9 +118,11 @@ const AppShowcase = () => {
           <p className="text-dominican-dark-green/70 mb-4">
             ¿Tienes una aplicación que contribuye a la seguridad dominicana?
           </p>
-          <button className="bg-dominican-dark-green text-white px-6 py-3 rounded-lg hover:bg-dominican-dark-green/90 transition-all transform hover:scale-105">
-            Proponer nueva app
-          </button>
+          <a href="https://github.com/orgs/Patria-Segura-RD/discussions/2" target="_blank" rel="noopener noreferrer">
+            <button className="bg-dominican-dark-green text-white px-6 py-3 rounded-lg hover:bg-dominican-dark-green/90 transition-all transform hover:scale-105">
+              Proponer nueva app
+            </button>
+          </a>
         </div>
       </div>
     </section>

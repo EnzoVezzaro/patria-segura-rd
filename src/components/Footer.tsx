@@ -24,7 +24,7 @@ const Footer = () => {
                 <Instagram className="h-5 w-5" />
               </a>
                */}
-              <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
+              <a href="https://github.com/Patria-Segura-RD" target="_blank" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
                 <Github className="h-5 w-5" />
               </a>
             </div>
@@ -66,10 +66,12 @@ const Footer = () => {
             © {new Date().getFullYear()} Patria Segura RD. Todos los derechos reservados. 
             Desarrollado por y para dominicanos 🇩🇴👨🏽‍💻
           </p>
-          <div className="flex space-x-6">
+          {/**
+           * <div className="flex space-x-6">
             <a href="#" className="text-white/70 hover:text-dominican-light-green text-sm transition-colors">Política de privacidad</a>
             <a href="#" className="text-white/70 hover:text-dominican-light-green text-sm transition-colors">Términos de uso</a>
           </div>
+           */}
         </div>
       </div>
     </footer>
