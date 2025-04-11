@@ -9,19 +9,21 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <Shield className="h-6 w-6 text-dominican-light-green mr-2" />
-              <span className="font-bold text-xl">Patria Segura Digital</span>
+              <span className="font-bold text-xl">Patria Segura RD</span>
             </div>
             <p className="text-white/70 mb-6 max-w-md">
               Una iniciativa para recopilar y promover aplicaciones dominicanas que contribuyan 
               a mejorar la seguridad y bienestar de nuestra comunidad.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
+              {/**
+               * <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
               <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
+               */}
               <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
                 <Github className="h-5 w-5" />
               </a>
@@ -61,8 +63,8 @@ const Footer = () => {
         
         <div className="border-t border-white/20 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/70 text-sm text-center md:text-left mb-4 md:mb-0">
-            © {new Date().getFullYear()} Patria Segura Digital. Todos los derechos reservados. 
-            Desarrollado por y para dominicanos.
+            © {new Date().getFullYear()} Patria Segura RD. Todos los derechos reservados. 
+            Desarrollado por y para dominicanos 🇩🇴👨🏽‍💻
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-white/70 hover:text-dominican-light-green text-sm transition-colors">Política de privacidad</a>

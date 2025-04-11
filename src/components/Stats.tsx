@@ -4,22 +4,22 @@ import { Shield, Download, Users, Star } from "lucide-react";
 const stats = [
   {
     icon: <Shield className="h-8 w-8" />,
-    value: "6+",
+    value: "2+",
     label: "Aplicaciones"
   },
   {
     icon: <Download className="h-8 w-8" />,
-    value: "250K+",
+    value: "0K+",
     label: "Descargas"
   },
   {
     icon: <Users className="h-8 w-8" />,
-    value: "15+",
+    value: "1+",
     label: "Desarrolladores"
   },
   {
     icon: <Star className="h-8 w-8" />,
-    value: "4.7",
+    value: "0",
     label: "Calificación promedio"
   }
 ];

@@ -19,44 +19,9 @@ const Contact = () => {
         </div>
         
         <div className="bg-dominican-light-green/20 rounded-2xl p-8 md:p-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8">
+            
             <div>
-              <h3 className="text-2xl font-bold text-dominican-dark-green mb-4">Envíanos un mensaje</h3>
-              <form className="space-y-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dominican-dark-green focus:border-dominican-dark-green outline-none"
-                    placeholder="Tu nombre"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
-                  <input 
-                    type="email" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dominican-dark-green focus:border-dominican-dark-green outline-none"
-                    placeholder="tu@ejemplo.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
-                  <textarea 
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dominican-dark-green focus:border-dominican-dark-green outline-none"
-                    rows={4}
-                    placeholder="¿Cómo quieres colaborar?"
-                  ></textarea>
-                </div>
-                <button 
-                  type="submit" 
-                  className="bg-dominican-dark-green text-white px-6 py-2 rounded-lg hover:bg-dominican-dark-green/90 transition-colors"
-                >
-                  Enviar mensaje
-                </button>
-              </form>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-dominican-dark-green mb-4">Otras formas de colaborar</h3>
               <div className="space-y-6">
                 <div>
                   <div className="flex items-center mb-2">
