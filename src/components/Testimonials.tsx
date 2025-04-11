@@ -68,11 +68,12 @@ const Testimonials = () => {
             Voces de la comunidad
           </h2>
           <p className="text-white/80 max-w-2xl mx-auto">
-            Historias reales de dominicanos que han mejorado su seguridad gracias a estas aplicaciones
+            Historias reales de dominicanos que han mejorado su seguridad gracias a estas aplicaciones (proximamente)
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/**
+         * <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
@@ -83,6 +84,8 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
+         * 
+         */}
       </div>
     </section>
   );
