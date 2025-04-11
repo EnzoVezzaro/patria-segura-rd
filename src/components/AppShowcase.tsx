@@ -9,69 +9,29 @@ import {
 const apps = [
   {
     id: 1,
-    name: "Alerta RD",
-    description: "Sistema de alertas temprana para emergencias y desastres naturales en todo el territorio dominicano.",
+    name: "DriveSafe RD",
+    description: "Fomenta hábitos de conducción más seguros con monitoreo en tiempo real, alertas inteligentes y seguimiento de comportamiento diseñado para proteger lo que más importa.",
     icon: <AlertTriangle className="h-8 w-8" />,
-    rating: 4.7,
-    users: "15K+",
+    rating: 0,
+    users: "0K+",
     color: "bg-gradient-to-br from-dominican-dark-green to-dominican-dark-green/70",
-    features: ["Alertas en tiempo real", "Mapas interactivos", "Sin conexión"],
-    imageUrl: null
+    features: ["Alertas en tiempo real", "Mapas interactivos", "Tracking System", "Mobile App"],
+    imageUrl: null,
+    homepage: 'https://drive-safe-rd.netlify.app/',
+    download: 'https://drive-safe-rd.netlify.app/'
   },
   {
     id: 2,
-    name: "Seguridad Ciudadana",
-    description: "Reporta incidentes, zonas peligrosas y mantente informado sobre la seguridad en tu comunidad.",
+    name: "SRE",
+    description: "Sistema de respuesta a emergencias que conecta familias con seres queridos durante eventos de crisis.",
     icon: <Shield className="h-8 w-8" />,
-    rating: 4.9,
-    users: "50K+",
+    rating: 0,
+    users: "0K+",
     color: "bg-gradient-to-br from-dominican-dark-green to-dominican-dark-green/70",
-    features: ["Mapeo de incidentes", "Comunidad vigilante", "Conecta con autoridades"],
-    imageUrl: "lovable-uploads/c47a9033-813c-49e8-9868-798fb3d30347.png"
-  },
-  {
-    id: 3,
-    name: "RD Tránsito",
-    description: "Información sobre el tráfico, accidentes y estado de las carreteras en República Dominicana.",
-    icon: <MapPin className="h-8 w-8" />,
-    rating: 4.6,
-    users: "25K+",
-    color: "bg-gradient-to-br from-dominican-dark-green to-dominican-dark-green/70",
-    features: ["Rutas seguras", "Reportes de accidentes", "Conducción asistida"],
-    imageUrl: null
-  },
-  {
-    id: 4,
-    name: "Emergencia 911",
-    description: "Aplicación oficial del Sistema Nacional de Emergencias y Seguridad 9-1-1 de República Dominicana.",
-    icon: <Phone className="h-8 w-8" />,
-    rating: 4.8,
-    users: "100K+",
-    color: "bg-gradient-to-br from-dominican-dark-green to-dominican-dark-green/70",
-    features: ["Llamada rápida", "Envío de ubicación", "Asistencia médica"],
-    imageUrl: null
-  },
-  {
-    id: 5,
-    name: "Comunidad Segura",
-    description: "Red social para vecinos enfocada en la seguridad comunitaria y apoyo mutuo.",
-    icon: <Users className="h-8 w-8" />,
-    rating: 4.5,
-    users: "30K+",
-    color: "bg-gradient-to-br from-dominican-dark-green to-dominican-dark-green/70",
-    features: ["Grupos vecinales", "Alertas locales", "Recursos compartidos"],
-    imageUrl: null
-  },
-  {
-    id: 6,
-    name: "ProtegeDR",
-    description: "Identifica y reporta situaciones de riesgo personal con un simple toque.",
-    icon: <ShieldCheck className="h-8 w-8" />,
-    rating: 4.8,
-    users: "45K+",
-    color: "bg-gradient-to-br from-dominican-dark-green to-dominican-dark-green/70", 
-    features: ["Botón de pánico", "Notificación a contactos", "Grabación de evidencia"],
-    imageUrl: null
+    features: ["Mapeo de incidentes", "Comunidad vigilante", "Conecta con hospitales", "PWA"],
+    imageUrl: "lovable-uploads/c47a9033-813c-49e8-9868-798fb3d30347.png",
+    homepage: 'https://emergency-dr.netlify.app/',
+    download: 'https://emergency-dr.netlify.app/'
   }
 ];
 
@@ -104,13 +64,13 @@ const AppCard = ({ app, index }: { app: typeof apps[0], index: number }) => {
           ))}
         </div>
         <div className="flex space-x-2 mt-4">
-          <button className="flex-1 flex items-center justify-center gap-2 bg-dominican-dark-green text-white py-2 px-4 rounded-lg hover:bg-dominican-dark-green/90 transition-colors">
+          <a href={app.download} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 bg-dominican-dark-green text-white py-2 px-4 rounded-lg hover:bg-dominican-dark-green/90 transition-colors">
             <Download className="h-4 w-4" />
             <span>Descargar</span>
-          </button>
-          <button className="flex items-center justify-center bg-gray-100 text-dominican-dark-green p-2 rounded-lg hover:bg-gray-200 transition-colors">
+          </a>
+          <a href={app.homepage} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-gray-100 text-dominican-dark-green p-2 rounded-lg hover:bg-gray-200 transition-colors">
             <ExternalLink className="h-5 w-5" />
-          </button>
+          </a>
         </div>
       </div>
     </div>
