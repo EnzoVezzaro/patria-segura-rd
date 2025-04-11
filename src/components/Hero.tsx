@@ -1,7 +1,20 @@
 
+import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 
+const words = ["segura", "protegida", "solidaria", "activa"];
+
 const Hero = () => {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 2000); // Change word every 2 seconds
+
+    return () => clearInterval(intervalId); // Cleanup on unmount
+  }, []);
+
   return (
     <section
       id="inicio"
@@ -17,7 +30,9 @@ const Hero = () => {
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
             Por una República Dominicana <br />
-            <span className="text-dominican-light-green">más segura</span>
+            <span className="text-dominican-light-green transition-opacity duration-500 ease-in-out">
+              más {words[currentWordIndex]}
+            </span>
           </h1>
           
           <p className="text-white/80 text-xl max-w-2xl mb-8">
