@@ -32,6 +32,19 @@ const apps = [
     imageUrl: "lovable-uploads/c47a9033-813c-49e8-9868-798fb3d30347.png",
     homepage: 'https://emergency-dr.netlify.app/',
     download: 'https://emergency-dr.netlify.app/'
+  },
+  {
+    id: 3,
+    name: "Sargassum Watch - Dominican Republic",
+    description: "A real-time API platform designed to monitor, visualize, and share data on sargassum influxes affecting the coastal zones of the Dominican Republic. The system provides up-to-date satellite-based alerts, coastal impact levels, predictive models, and location-specific insights to support scientific research, government response, fisherfolk, tourism operators, and coastal communities.",
+    icon: <MapPin className="h-8 w-8" />,
+    rating: 0,
+    users: "0K+",
+    color: "bg-gradient-to-br from-dominican-dark-green to-dominican-dark-green/70",
+    features: ["Real-time monitoring", "Satellite alerts", "Predictive models", "Coastal impact data"],
+    imageUrl: "lovable-uploads/c47a9033-813c-49e8-9868-798fb3d30347.png",
+    homepage: 'https://sargassum-sight-forecast.vercel.app/',
+    download: 'https://sargassum-sight-forecast.vercel.app/'
   }
 ];
 
